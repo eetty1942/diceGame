@@ -1,13 +1,35 @@
 package com.maple;
 
-import java.util.Scanner;
+//import java.util.ArrayList;
+//import java.util.List;
 
 public class Player {
-	public String playerName;
-	public Scanner scanner = new Scanner(System.in);
+	private String playerName;
+	private int score;
 	
-	public selectMode(){ 
+	Dice dice = new Dice();
+	
+	public String getPlayerName() {
+		return playerName;
+	}
 
-	System.out.println("번플레이어의 이름을 쓰시오 : ");
-	playerName = scanner.next();
+	public void setPlayerName(String playerName) {
+		this.playerName = playerName;
+	}
+
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+	
+	public void setDice(){
+		//int diceNumber;
+		//List<Integer> score = new ArrayList<Integer>();
+		
+		setScore(dice.rollDice());		
+		
+	}
 }
