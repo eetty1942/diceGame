@@ -6,7 +6,7 @@ public class Dice {
 	
 	private int diceNumber;
 
-	public int commonDice(){
+	public int rollDice(){
 		
 		Random random = new Random();
 		
@@ -14,5 +14,14 @@ public class Dice {
 		
 		return diceNumber;
 	}
+	
+	public int getDiceNumber() {
+		return diceNumber;
+	}
+
+	public void setDiceNumber(int diceNumber) {
+		this.diceNumber = diceNumber;
+	}
+
 
 }
